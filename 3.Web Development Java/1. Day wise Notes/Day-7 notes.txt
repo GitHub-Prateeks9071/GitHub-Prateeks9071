@@ -1,0 +1,64 @@
+how to delete an existing prop in json
+
+popup in javascript
+
+
+let geolocation = navigator.geolocation
+
+geolocation.getCurrentLocation(showLocation, handleError)
+
+
+function showLocation(position){
+  let lat = position.coords.latitude
+  let lon = position.coords.longitude
+}
+
+function handleError(){
+
+}
+
+
+--------------------------------
+
+advanced array function (ES6)
+- map()
+- filter() 
+- forEach()
+
+
+let a1 = [1,2,3,4,5,6,7,8,9]
+
+let s2 = ["shrilata","Tushar","adarsh","Nancy","sheetal"]
+
+
+a1.filter(function(){})
+
+a1.filter((element) => {element%2 == 0})
+
+<script>
+	    //advanced array function (ES6)
+	    let a1 = [1,2,3,4,5,6,7,8,9]
+		
+		//let a2 = a1.filter((ele) => ele%2==0)
+		
+		//let a2 = a1.map((ele) => ele*ele)
+		
+		/*for(i=0;i<a1.length;i++)
+		    console.log(a1[i])*/
+			
+	    /*for(ele of a1)
+		  console.log(ele) */
+		  
+		 a1.forEach(ele => console.log(ele*ele))
+		
+		//console.log(a2)
+	 </script>
+
+
+
+
+
+
+
+
+

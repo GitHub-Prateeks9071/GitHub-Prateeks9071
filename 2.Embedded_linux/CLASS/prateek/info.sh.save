@@ -1,0 +1,9 @@
+IoT
+#!/bin/bash
+system hostname = 'uname -n'
+system_kernel_version = 'uname-v'
+system_name = 'uname-s'
+
+echo "System hostname is : " $system_hostname
+echo "system kernel name : "$system_kernel_version
+echo"System name is : " $system_name

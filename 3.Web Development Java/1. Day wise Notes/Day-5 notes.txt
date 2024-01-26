@@ -1,0 +1,166 @@
+User defined objects:
+- Object Initializer - JSON
+- Using Class (ES6)
+
+
+let personObj = {pname:"Kiran", age:23}
+	   /*document.write("Person Name: " + personObj.pname + "<br>")
+	   document.write("Person Age: " + personObj.age + "<br>")
+	 
+	   personObj.pname = "Adarsh"
+	   personObj.age = 22
+	   
+	   document.write("Person Name: " + personObj.pname + "<br>")
+	   document.write("Person Age: " + personObj.age + "<br>")
+	   */
+	   personObj.city = "Pune"
+	   
+	   for(prop in personObj)
+	      console.log(prop + " : " + personObj[prop])
+	 
+
+--------------------------------
+
+let book = {
+	               bookid : 101, 
+				   bname : "Core Java",
+				   price: 400,
+				   author: "Kishori S",
+				   display : function(){
+				      console.log(this.bookid, this.price, this.author, this.bname)
+				   },
+				   incrPrice : function(per){
+				      this.price = this.price + (this.price * per/100)
+				   }
+	            }
+	   book.display()
+	   book.incrPrice(10)
+	   book.display()
+
+
+-------------------------------
+
+//- Object Initializer
+	   // JSON - JavaScript Object Notation
+	  let person = {
+	                pid : 1001,
+					pname :"Adarsh",
+					age : 23.7,
+					vaccination_done : true,
+					hobbies : ["coding", "reading", "gaming"],
+					address : {city : "Pune", state : "Mah"}
+	            }
+	    console.log(person.pname)
+		console.log(person.age)
+		console.log(person.vaccination_done)
+		console.log(person.hobbies[1])
+		console.log(person.address.state)
+
+
+-------------------------------
+
+ <script>
+     class Student{
+		constructor(prnid, studname){
+		   this.prn = prnid;
+		   this.sname = studname
+		}
+		display(){
+		   console.log(this.prn, this.sname)
+		}
+	 }
+	 
+	 class GradStudent extends Student{
+	     constructor(prn, sname, gpa){
+		   super(prn, sname) 
+		   this.gpa = gpa
+		 }
+	 }
+	 
+	 let gs1 = new GradStudent(1001, "Priyanka",9.3)
+	 let gs2 = new GradStudent(1002, "Sheetal",8.7)
+	 let gs3 = new GradStudent(1003, "Sweety",9.0)
+	 
+	 gs1.display()
+	 console.log(gs1.gpa)
+	 
+	 
+    </script>
+   </head>
+   <body >
+	 <script>
+	  /* let s1 = new Student(101,"Nimish");
+	 let s2 = new Student(102,"Shahrukh");
+	 let s3 = new Student(103,"Nancy");
+	 
+	 s1.display()
+	 s2.display()
+	 s3.display()*/
+		
+	 </script>
+	</body>
+
+
+---------------------------------
+
+
+let handle = setInterval(f1, 1000)
+clearInterval(handle)
+
+
+--------------------------------------
+
+<html>
+   <head>
+   <script>
+      function greet(){   //event handler
+	     let name = document.getElementById("uname").value
+		 alert("hello " + name)
+	  }
+    </script>
+   </head>
+   <body>
+	  <form>
+	     Name : <input name="uname" id="uname"><br>
+		 <input type="button" value="greet" onclick="greet()">
+	  </form>
+	</body>
+
+</html>
+
+--------------------------------
+
+<html>
+   <head>
+   <script>
+      function add(){   //event handler
+	     let no1 = parseInt(document.getElementById("n1").value)
+		 let no2 = parseInt(document.getElementById("n2").value)
+		document.getElementById("p1").innerHTML = (no1+no2)
+		
+	  }
+    </script>
+   </head>
+   <body>
+	  <form>
+	     No1 : <input name="no1" id="n1"><br>
+		 No2 : <input name="no2" id="n2"><br>
+		 <input type="button" value="Add" onclick="add()"><br>
+		 The Result is : <span id="p1"></span>
+	  </form>
+	</body>
+
+</html>
+
+----------------------------------------
+
+
+
+
+
+
+
+
+
+
+

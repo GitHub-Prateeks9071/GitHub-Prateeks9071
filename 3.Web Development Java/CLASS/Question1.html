@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function product(){
+				let Pname = document.getElementById('name').value
+				let Prate = document.getElementById('rate').value
+				let Quant = document.getElementById('qua').value
+				if(Quant<20){
+					document.write("There is no Discounton this quantity")
+				}
+				else if(Quant>=20 && Quant<=40){
+					document.write("Offer is 10% Discount")
+				}
+				else if(Quant>50){
+					document.write("Offer is 20% Discount")
+				}				
+				document.getElementById("add").innerHTML = "Product Details are added Successfully"
+			}
+			
+		</script>
+	<title> Question no.1 </title>
+	</head>
+	<body>
+		<form>
+			Product Name : <input type="text" name="Pname" id="name"><br>
+			Product Rate : <input type="text" name="Prate" id="rate"><br>
+			Quantity : <input type="number" name="Quant" id="qua"><br>
+			<input type="button" value="add" onclick="product()"><br><br>
+			
+		</form>
+	</body>
+</html>

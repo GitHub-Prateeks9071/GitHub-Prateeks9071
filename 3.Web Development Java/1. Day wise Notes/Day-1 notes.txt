@@ -1,0 +1,33 @@
+<markup>  tags, elements
+
+<html>
+<body>
+<head>
+<b>, <i>, <u>
+<br> - line break
+<hr> - horizontal ruler
+
+headers - <h1>....<h6>
+
+attributes?
+syntax - <markup attrib1="value1"  attrib2="value2" >
+
+Container tags:
+- <div>   - division
+- <p>    - paragraph
+- <span>
+
+
+
+<ol> - ordered List
+<li> - List Item
+<ul> - Unordered List
+
+
+
+
+
+
+
+
+

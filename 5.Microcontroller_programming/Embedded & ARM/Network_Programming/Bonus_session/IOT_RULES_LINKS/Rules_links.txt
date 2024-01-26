@@ -1,0 +1,167 @@
+Iot Core --->S3
+https://docs.aws.amazon.com/iot/latest/developerguide/s3-rule-action.html
+
+
+Iot Core --->CloudWatch
+https://docs.aws.amazon.com/iot/latest/developerguide/cloudwatch-logs-rule-action.html
+
+
+Iot Core --->DynamoDBv2(Split Data to columns)
+https://docs.aws.amazon.com/iot/latest/developerguide/dynamodb-v2-rule-action.html
+
+
+Iot Core ---> Kinesis Firehose
+https://docs.aws.amazon.com/iot/latest/developerguide/kinesis-firehose-rule-action.html
+
+
+Iot Core --->SimpleNotifIcationService
+https://docs.aws.amazon.com/iot/latest/developerguide/sns-rule-action.html
+
+
+Iot Core --->IoT Analytics
+https://docs.aws.amazon.com/iot/latest/developerguide/iotanalytics-rule-action.html
+
+
+Iot Core --->Lambda Function
+https://docs.aws.amazon.com/iot/latest/developerguide/iot-lambda-rule.html
+
+
+
+//AWS IOT TUTORIAL
+https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules-tutorial.html
+
+
+
+AWS IoT Policy Document
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "iot:*",
+      "Resource": "*"
+    }
+  ]
+}
+
+
+************************************************************************
+
+
+
+NodeRed_Function
+
+temp = Math.floor ((Math.random() * 55) + 50)
+humi = Math.floor ((Math.random() * 45) + 35)
+
+msg.payload = {
+    "state": {
+        "reported": {
+            "temperature": temp,
+            "humidity": humi
+        }
+    }
+}
+return msg;
+
+**********************************************************************
+Rule query
+
+SELECT *, timestamp() AS ts FROM 'demo' WHERE Temperature > 50
+Iot Thing Shadow Details
+Topic to Publish : $aws/things/IotClass1/shadow/update
+#where IotClass1 is my thing Name
+
+Verify Weather Update Accepted/Rejected by subscribing to these topics in aws Iot Core Test Console:
+1. $aws/things/IotClass1/shadow/update/accepted
+2. $aws/things/IotClass1/shadow/update/Rejected
+
+Json Format to be Used:
+
+{
+    "state": {
+        "desired": {
+            "temprature": "1234"
+        },
+        "reported": {
+            "temprature": "5678"
+        }
+    }
+}
+
+************************************************************************
+
+
+
+TarunNovember 21, 2017 at 7:25 PM
+
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+Reply
+TarunMay 22, 2018 at 12:04 PM
+
+https://developer.android.com/things/
+Reply
+TarunJune 6, 2018 at 7:23 PM
+
+http://www.ti.com/tool/ble-stack
+http://www.ti.com/lit/ug/swru393e/swru393e.pdf
+Reply
+
+    TarunJune 6, 2018 at 7:46 PM
+
+    http://processors.wiki.ti.com/index.php/CC2650_SensorTag_User's_Guide
+    TarunJune 7, 2018 at 2:13 PM
+
+    https://developer.ibm.com/recipes/tutorials/ti-sensor-tag-and-raspberry-pi/
+
+TarunDecember 19, 2018 at 7:23 PM
+
+$ sudo apt-get update
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository universe
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt-get update
+$ sudo apt-get install python-certbot-apache
+Reply
+TarunMay 24, 2019 at 7:57 PM
+
+https://www.knowles.com/applications/ear-solutions/premium-sound/the-ba-advantage
+Reply
+TarunMay 24, 2019 at 8:00 PM
+
+https://www.aptx.com/aptx-hd
+Reply
+UnknownNovember 9, 2019 at 2:52 PM
+
+https://medium.com/@KerrySheldon/ec2-exercise-1-1-host-a-static-webpage-9732b91c78ef
+Reply
+TarunNovember 30, 2019 at 12:00 PM
+
+https://www.savjee.be/2019/07/connect-esp32-to-aws-iot-with-arduino-code/
+Reply
+TarunSeptember 29, 2020 at 5:53 PM
+
+{
+"state": {
+"desired": {
+"temprature": "12"
+},
+"reported": {
+"temprature": "5678"
+}
+}
+}
+Reply
+TarunOctober 8, 2020 at 6:10 PM
+
+https://dzone.com/articles/parallel-tcpip-socket-server-with-multi-threading
+Reply
+TarunOctober 9, 2020 at 6:35 PM
+
+https://medium.com/simple-ai/pandas-library-in-a-nutshell-intro-to-machine-learning-3-acbd39ec5c9c
+Reply
+sandeeptembareSeptember 4, 2021 at 7:49 AM
+
+Thanks for the documentation, it helps today as well
+

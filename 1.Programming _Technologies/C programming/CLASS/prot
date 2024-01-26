@@ -1,0 +1,2 @@
+grep '/usr/s\?bin' /etc/systemd/system/display-manager.service
+ExecStart=/usr/sbin/gdm3

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <script src="jquery-3.6.0.min.js"></script>
+   <script>
+      $(document).ready(function(){
+        $("#btn1").click(function(){
+          $("form").hide(3000)
+        })
+      })
+   </script>
+  </head>
+  <body >
+    <form>
+        
+        Email Id:<input type="email"><br>
+        Password:<input type="password"><br>
+       
+    </form>
+    <input type="button" id="btn1" value="hide" onclick="f1()">
+  </body>
+</html>

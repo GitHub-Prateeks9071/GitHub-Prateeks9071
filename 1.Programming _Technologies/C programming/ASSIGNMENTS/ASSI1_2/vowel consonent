@@ -1,0 +1,23 @@
+#include<stdio.h>
+void main()
+
+{
+char a,e,i,o,u,A,E,I,O,U;
+
+char character ;
+
+
+	printf("Enter a character%c");
+	scanf("%c",&character);
+
+if(character= a|e|i|o|u|A|E|I|O|U) 
+	{
+  	printf("The given character is Vowel");
+	}
+
+else
+	{
+	printf("The given character is Consonent");
+	}
+return 0;
+}

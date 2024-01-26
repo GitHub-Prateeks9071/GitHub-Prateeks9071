@@ -1,0 +1,10 @@
+a=input("Enter value of a");
+b=input("Enter value of b");
+c=a+b
+print("sum",c)
+d=a-b
+print("subs",d)
+e=a/b
+print("division",e)
+f=a*b
+print("multiplication",f)

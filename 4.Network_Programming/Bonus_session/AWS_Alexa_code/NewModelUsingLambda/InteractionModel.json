@@ -1,0 +1,166 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sensor controller",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SwitchManagerIntent",
+                    "slots": [
+                        {
+                            "name": "Switch_State",
+                            "type": "switchstate"
+                        }
+                    ],
+                    "samples": [
+                        "switch {Switch_State} button",
+                        "turn {Switch_State} switch",
+                        "turn switch {Switch_State}"
+                    ]
+                },
+                {
+                    "name": "SensorManagerIntent",
+                    "slots": [
+                        {
+                            "name": "Sensor_Values",
+                            "type": "measurment_type"
+                        }
+                    ],
+                    "samples": [
+                        "{Sensor_Values}",
+                        "what is the {Sensor_Values}",
+                        "what is the current {Sensor_Values}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "measurment_type",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "temperature"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "humidity"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "switchstate",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "SensorManagerIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Sensor_Values",
+                            "type": "measurment_type",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "isInSet",
+                                    "prompt": "Slot.Validation.280002905387.1300640920141.1288776628169",
+                                    "values": [
+                                        "temperature",
+                                        "humidity"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "name": "SwitchManagerIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Switch_State",
+                            "type": "switchstate",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {},
+                            "validations": [
+                                {
+                                    "type": "isInSet",
+                                    "prompt": "Slot.Validation.886944118805.1601898094150.364370363096",
+                                    "values": [
+                                        "off",
+                                        "on"
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Slot.Validation.280002905387.1300640920141.1288776628169",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Or you can say What is the Current Humidity"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "You can say What is the current Temperature"
+                    }
+                ]
+            },
+            {
+                "id": "Slot.Validation.886944118805.1601898094150.364370363096",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "or You can say turn off switch"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "You can say turn on switch"
+                    }
+                ]
+            }
+        ]
+    }
+}

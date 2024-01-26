@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <form>
+    <script>
+    
+        function form(){
+        
+            let Start Number = parseInt(document.getElementById("Start").value)
+            let End Number= parseInt(document.getElementById("End").value)
+            let Multiply by = parseInt(document.getElementById("Multiply").value)
+           
+        for(var p=Start;p<=End;p++)
+        {
+            var mul = p*Multiply
+            
+        }
+        document.write("textarea").innerHTML= mul            
+}
+</script>
+    </form>
+
+</head>
+
+<body>
+    <form>
+        Start number : <input name="no1" id="no1">
+        End number : <input name="no2" id="no2">
+        Multiply By : <input name="no3" id="no3"><br>
+        <input type="button" value="Table" onclick="form()"> 
+        <input type="reset" value="Reset" onclick="reset()"> <br>
+        <textarea rows="100" col="50" id="textarea"></textarea>
+        
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<title>My page</title>
+		<script>
+			function reverse_arr(){
+				for(i=0;i<arr.length;i++)
+				{
+					var str = arr[i].split("")
+					var lst = str.reverse()
+					var rev = lst.join("")
+					arr[i] = rev
+				}
+				document.write("Sorted Array after reversing  :-> "+arr.sort()+"<br>"); 
+			}
+			
+			 
+		</script>
+	</head>
+	<body>
+		<script>
+			let arr = ["sundram","trivedi","agra","jaipur"];
+			document.write("Original array :-> "+arr+"<br>")
+			reverse_arr()
+			 
+		</script>
+	</body>
+	
+
+</html>

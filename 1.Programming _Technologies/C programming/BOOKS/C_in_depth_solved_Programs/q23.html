@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <head>
+        <script>
+            function circle() 
+            {
+                let r = parseInt(document.getElementById("r").value)
+                document.getElementById("p1").innerHTML ="area: "+(3.14*r*r)
+                document.getElementById("p2").innerHTML="circumference:" +(2*3.14*r)
+            }       
+           
+        </script>
+    </head>
+    <body>
+ 
+           <form>
+
+            Enter Radius: <input type="number" name = "Radius" id = "r"><br><br>
+  
+            <input type = "Button" value = "display" onclick = "circle()"><br>
+            <span id="p1"></span><br>
+            <span id="p2"></span>
+            </form>
+       
+    </body>
+</html>

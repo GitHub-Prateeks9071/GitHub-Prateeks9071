@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shapes Calculator</title>
+		<script type="text/javascript">
+			function calculation() {
+				let length = parseInt(document.getElementById('length').value)
+				let breadth = parseInt(document.getElementById('breadth').value)
+				document.getElementById("area").innerHTML = "The Area of Rectangle is: " + (length * breadth)
+				document.getElementById("peri").innerHTML = "The Perimeter of Rectangle is: " + (2 * (length + breadth))
+			}
+		</script>
+	</head>
+	<body>
+		<h2>SHAPE - RECTANGLE</h2>
+		<form>
+			Length: <input type="text" name="length" id="length"><br>
+			Breadth: <input type="text" name="breadth" id="breadth"><br>
+			<input type="button" name="calc" value="Calculate" onclick="calculation()"><br>
+			<span id="area"></span><br>
+			<span id="peri"></span>
+		</form>
+	</body>
+</html>

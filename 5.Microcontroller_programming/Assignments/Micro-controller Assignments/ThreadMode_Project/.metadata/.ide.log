@@ -1,0 +1,14 @@
+2022-05-02 08:50:17,540 [INFO] Activator:177 - 
+
+
+2022-05-02 08:50:17,541 [INFO] Activator:178 - !SESSION log4j initialized
+2022-05-02 08:50:20,466 [ERROR] AnalyticsContext:980 - The ST intranet updater server is unknown: mcucrossselector.codex.cro.st.com
+2022-05-02 08:51:07,748 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {s}->https://sw-center.st.com:443: Socket closed
+2022-05-02 08:51:07,760 [INFO] RetryExec:113 - Retrying request to {s}->https://sw-center.st.com:443
+2022-05-02 08:51:14,126 [INFO] Activator:177 - 
+
+
+2022-05-02 08:51:14,127 [INFO] Activator:178 - !SESSION log4j initialized
+2022-05-02 08:51:17,532 [ERROR] AnalyticsContext:980 - The ST intranet updater server is unknown: mcucrossselector.codex.cro.st.com
+2022-05-02 08:52:02,935 [INFO] RetryExec:97 - I/O exception (java.net.SocketException) caught when processing request to {s}->https://sw-center.st.com:443: Socket closed
+2022-05-02 08:52:02,936 [INFO] RetryExec:113 - Retrying request to {s}->https://sw-center.st.com:443

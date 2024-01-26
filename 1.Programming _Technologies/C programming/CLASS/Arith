@@ -1,0 +1,18 @@
+#include<stdio.h>
+//Datatype
+int main()
+{
+int y,z;
+
+
+ //memory without value provided
+
+
+ //declaration  & initialization
+scanf("%d%d",&y,&z);
+int x = y+z;
+printf ("%d\n",x);
+
+
+return 0;
+}

@@ -1,0 +1,251 @@
+<html>
+   <head>
+       <script>
+	      function add(){
+		     //arguments
+			 var sum = 0;
+			 for(i=0; i<arguments.length;i++)
+			     sum += arguments[i]
+		     return sum;
+		  }
+		  
+		  function minimum(){
+		    var min = arguments[0];
+			for(i=1; i < arguments.length; i++){
+			  if(min > arguments[i])
+			     min = arguments[i]
+			 }
+			 return min;
+		  }
+	   </script>
+   </head>
+   <body >
+	 <script>
+	   //console.log(add(1,2))
+	   //console.log(add(1,2,3,4,5))
+	   
+	   console.log(minimum(1,2))
+	   console.log(minimum(67,34,22,90,100))
+	   console.log(minimum(45,34,65))
+	  
+	 </script>
+	   
+	</body>
+
+</html>
+
+--------------------------------
+
+scope of variables:
+- global
+- local
+- block-scoped var (let)
+
+--------------------------------------
+
+<html>
+   <head>
+       <script>
+	      var name="shrilata"  //global var
+	      
+		  function demo(){
+		     console.log("in func", name)
+			 course="pgdiot" //local var
+			 console.log("local var", course)
+		  }
+	   </script>
+   </head>
+   <body >
+	 <script>
+	   demo()
+	   console.log("outside func", name)
+	   console.log("local var outside func", course)
+	 </script>
+	   
+	</body>
+
+</html>
+
+-------------------------
+
+function expression
+
+
+<html>
+   <head>
+       <script>
+		 //function expression 
+		var abc = function(){   //anonymous func
+		                 document.write("Hello world <br>")
+		              }
+					  
+		function greetUser(name){   //named func
+		    document.write("Hello " + name + "<br>")
+		  }
+        var greetUser1 = function(name){
+		    document.write("Hello " + name + "<br>")
+		}
+		
+		function add(a, b){   //named func
+		     return a+b;
+		}
+		 
+        var adder = function(a,b){  return a+b }		 
+	   </script>
+   </head>
+   <body >
+	 <script>
+	    greetUser1("Abdul")
+		document.write(adder(3,4))
+	 </script>
+	   
+	</body>
+
+</html>
+
+-----------------------------
+
+user-def function
+- named funcs
+- function expressions
+
+
+
+built-in/predefined  functions:
+- parseInt(str), parseFloat(str)
+- isFinite(), isNaN()
+
+----------------------
+
+<html>
+   <head>
+       <script>
+	   //ES6 - fat arrow/arrow function/lamba
+		
+		var greet1 =  () => document.write("Hello world <br>")
+
+		var greetUser1 = name => document.write("Hello " + name + "<br>")
+		
+        //var add = function(a,b){  return a+b }	
+
+        var add1 = (a,b) => a+b
+		
+		function strOps(str){
+		    document.write(str.length);
+			document.write(str.toUpperCase())
+			document.write(str.toLowerCase())
+		}
+		
+		var strOps1 = (str) => {
+		   document.write(str.length);
+			document.write(str.toUpperCase())
+			document.write(str.toLowerCase())
+		}
+		
+		function display(){
+		     for(i=1;i<=10;i++)
+			     console.log(i)
+		}
+		
+		var display1 = () => {
+		   for(i=1;i<=10;i++)
+			     console.log(i)
+		}
+		
+	   </script>
+   </head>
+   <body >
+	 <script>
+	    //greet1()
+		//greetUser1("Trivedi")
+		//document.write(add1(1,2))
+		//strOps("Hello world")
+		display1()
+	   </script>
+	</body>
+
+</html>
+
+-----------------------
+Javascript Objects:
+
+- predefined objects
+- user defined objects
+
+
+
+
+- predefined objects:
+ string, date, array, math, number, boolean
+
+method chaining - obj.m1().m2().m3()
+
+String:
+<script>
+	    var tname = "Sundaram Trivedi"
+		
+		document.write(tname.length + "<br>")
+		
+		document.write(tname.toUpperCase() + "<br>")
+		document.write(tname.toLowerCase() + "<br>")
+		
+		document.write(tname.charAt(5) + "<br>")
+		document.write(tname.indexOf("v") + "<br>")
+		
+		
+		document.write(tname.concat(" aaa").concat("  bbb"))
+	 </script>
+
+-----------------------------
+
+
+/*let s1 = "hello world welcome to js"
+	   console.log(typeof(s1))
+	   
+	   let a1 = s1.split(" ")
+	   console.log(typeof(a1))
+	   
+	   for(i=0;i<a1.length;i++)
+	   console.log(a1[i])*/
+	   
+	   
+	   let s2 = "tushar|abhishek|abdul|vivek|kiran"
+	   let a2 = s2.split("|")
+	   console.log(a2)
+
+
+-----------------------------------
+
+
+Math:
+Date
+
+<script>
+	  let d1 = new Date()
+	  document.write( d1 + "<br>")
+	  
+	  //setXXX(), getXXX()
+	  document.write( d1.getDate() + "<br>")
+	  document.write( d1.getMonth() + "<br>")
+	  document.write( d1.getFullYear() + "<br>")
+	  document.write( d1.getTime() + "<br>")
+	  document.write( d1.getDay() + "<br>")
+	  
+	  document.write( "------------------  " + "<br>")
+	  d1.setFullYear(2050)
+	   d1.setMonth(11) 
+	  d1.setDate(31) 
+	 document.write( d1 + "<br>")
+	 </script>
+
+---------------------------------
+
+
+
+
+
+
+
+
+
+

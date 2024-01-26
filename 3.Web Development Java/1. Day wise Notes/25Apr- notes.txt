@@ -1,0 +1,73 @@
+REST
+WEB service: service available over the web!!
+- SOAP-based ws
+- RESTful ws (lightweight ws)
+
+REST - REpresentational State Transfer
+
+1)
+URL's:
+- urls static content  XX
+- urls dynamic content
+
+static urls:
+http://someserver.com/welcome.html
+http://someserver.com/faveicon.ico
+http://someserver.com/customer.json
+http://someserver.com/myvacation.mp4
+
+
+dynamic urls:
+Restless URL: action orineted
+
+http://www.techarticles.com/getarticles?id=12345
+http://www.techarticles.com/getarticles/12345
+
+http://www.techarticles.com/deletearticles/12345
+
+
+
+http://www.patni.com/employees/getEmp?empid=12345
+http://weatherapp.com/getWeather?country=brazil
+
+
+Restful URL:non/resorce oriented 
+
+http://www.techarticles.com/articles/12345
+http://www.patni.com/employees/emp?empid=12345
+http://weatherapp.com/weather?country=brazil
+
+2)
+w3cg - HTTP methods
+- get - Read
+- post - Create
+- put  - Update
+- delete - Delete
+
+
+CRUD ops - Create, Read, Update, Delete
+
+Not interested:
+
+- head
+- trace
+- options
+- connect
+
+get method - 
+1) <form method="get">
+2) <a href="localhost:3000/emps/12345">Get emp</a>
+3) Browser URL : http://localhost:3000
+
+post method:
+1) <form method="post">
+
+
+
+
+
+
+
+
+
+

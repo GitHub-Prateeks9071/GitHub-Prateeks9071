@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <script>
+            let personObj = {pname:"Prateek", age:"24"}
+            document.write("Person Name : " + personObj.pname + "<br>")
+            document.write("Person Age : " + personObj.age + "<br>")
+            personObj.pname = "Vaibhav"
+            personObj.age = "21"
+            document.write("Person Name : " + personObj.pname + "<br>")
+            document.write("Person Age : " + personObj.age + "<br>")
+            personObj.city = "Pune"
+            for(prop in personObj)
+                document.write(prop + ":" + personObj.city[prop])
+        </script>
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <head>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <script>
+            // Object Initializer
+            // JSON = JavaScript Object Notation
+            let book = {
+                bookid: "9211",
+                bname: "Java",
+                price: "50000",
+                author: "Vaibhav S",
+                //creating display function
+                display: function()
+                {
+                    document.write("<br>", this.bookid,"<br>", this.bname,"<br>", this.price,"<br>", this.author,"<br>")
+                },
+            }
+           book.display()
+           document.write("---------------------------<br>")
+           // How to Display a Person Details?
+           let person = {
+               pid : 1001,
+               pname : "Vaibhav",
+               age : "21.5",
+               vaccination_done : true,
+               hobbies : ["coding","reading","gaming"],
+               address : {city : "Pune", state : "MH"}
+           }
+           document.write(person.pname,"<br>")
+           document.write(person.age,"<br>")
+           document.write(person.vaccination_done,"<br>")
+           document.write(person.hobbies[1],"<br>")
+           document.write(person.address.state,"<br>")
+        </script>
+    </body>
+</html>

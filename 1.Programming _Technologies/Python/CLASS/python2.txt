@@ -1,0 +1,15 @@
+print("Enter name :")  
+name = input();
+print(name);
+a="prateek"
+a='prateek singh'
+
+
+
+
+print("Enter student name")
+cls= input(name)
+print(cls)
+
+
+

@@ -1,0 +1,30 @@
+Name: Vaibhav Sahu
+PRN No.: 220340126031
+
+Post Graduation - Diploma in Internet of Things Lab Exams and Internal Assessments
+
+Module Name						Obtained Marks	Max. Marks	Percentage
+
+(1) Programming Technologies				30 + 18 = 48	40 + 20 = 60	80%
+
+(2) Microcontrollers Programming			36 + 20 = 56	40 + 20 = 60	93.33%
+
+(3) Web Programming & Java				35 + 17 = 52	40 + 20 = 60	86.66%
+
+(4) Embedded Linux Platform				27 + 19 = 46	40 + 20 = 60	76.66%
+
+(5) IoT Protocols					33 + 18 = 51	40 + 20 = 60	85%
+
+(6) Network Programming & Wireless Technologies		39 + 19 = 58	40 + 20 = 60	96.66%
+
+(7) Data Management & Analytics				
+
+(8) IoT Security					
+
+(9) Edge & Cloud Computing				40 + 20 = 60	40 + 20 = 60	100%
+
+--------------------------------------------------------------------------------------------------------------
+
+Total 7 Modules	Marks are				371		420		88.33%
+
+

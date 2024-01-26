@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<script>
+			function compute()
+			{
+				var amount = parseFloat(document.getElementById('amount').value)
+				var rate = parseFloat(document.getElementById('rate').value)
+				var period = parseFloat(document.getElementById('period').value)
+				var rateMonth = (rate / 100) / 12
+				var tenureMonth = period * 12
+				let monthly = amount * rateMonth * (Math.pow((1 + rateMonth),tenureMonth) / (Math.pow((1 + rateMonth),tenureMonth) - 1))
+				let totalpay = monthly * (period * 12)
+				let extra = totalpay - amount
+				document.getElementById('pay').innerHTML = monthly
+				document.getElementById('total').innerHTML = totalpay
+				document.getElementById('interest').innerHTML = extra
+			}
+		</script>
+		<title> JS - 29 </title>
+	</head>
+	<body>
+		<form>
+			<table align="center" cellpadding="10px" border="1">
+				<tr>
+					<th colspan="2" align="left">Enter Loan Information : </th>
+				</tr>
+			
+				<tr>
+					<td>1) Amount of the loan (any currency) : </td>
+					<td><input type="number" name="n1" id="amount"></td>
+				</tr>
+			
+				<tr>
+					<td>2) Anuual percentage rate of interest : </td>
+					<td><input type="number" name="n1" id="rate"></td>
+				</tr>
+			
+				<tr>
+					<td>3) Repayment period in year : </td>
+					<td><input type="number" name="n1" id="period"></td>
+				</tr>
+			
+				<tr>
+					<td colspan="2" align="center"><input type="button" name="Compute" value="Compute" onclick="compute()"></td>
+				</tr>
+
+				<tr>
+					<th colspan="2" align="left">Payment Information : </th>
+				</tr>
+			
+				<tr>
+					<td>4) Your monthly payment will be : </td>
+					<td><span id="pay"></span></td>
+				</tr>
+			
+				<tr>
+					<td>5) Your total payment will be : </td>
+					<td><span id="total"></span></td>
+				</tr>
+			
+				<tr>
+					<td>6) Your total interest payments will be : </td>
+					<td><span id="interest"></span></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

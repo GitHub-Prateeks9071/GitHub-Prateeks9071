@@ -1,0 +1,121 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": false,
+		"sessionId": "amzn1.echo-api.session.3974f39e-410d-4786-846f-ea5bce891d12",
+		"application": {
+			"applicationId": "amzn1.ask.skill.b24dc7bb-cc63-436a-a7e2-c58da17056f7"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AFWZJHATX336XSXFVGOSOTUSXMY6S7GZSHASMSAHYNHFIM3UZHPMVUXCKHRUSYIYW5VKY3MBR6XPT6OVLCIA4TSE47C4U5FF2X6TQ4WQ3C4GICC5XAQOMQDLAN2YC6TOXKTTPGKDJRZNWI6X2IW5FBWEYPUQHE2CZTV43FVGJMYWRSBMWPUCMN5BO4OT5SPEMCW5ILQK7BWU6PA"
+		}
+	},
+	"context": {
+		"Viewports": [
+			{
+				"type": "APL",
+				"id": "main",
+				"shape": "RECTANGLE",
+				"dpi": 213,
+				"presentationType": "STANDARD",
+				"canRotate": false,
+				"configuration": {
+					"current": {
+						"video": {
+							"codecs": [
+								"H_264_42",
+								"H_264_41"
+							]
+						},
+						"size": {
+							"type": "DISCRETE",
+							"pixelWidth": 1280,
+							"pixelHeight": 800
+						}
+					}
+				}
+			}
+		],
+		"Viewport": {
+			"experiences": [
+				{
+					"arcMinuteWidth": 346,
+					"arcMinuteHeight": 216,
+					"canRotate": false,
+					"canResize": false
+				}
+			],
+			"shape": "RECTANGLE",
+			"pixelWidth": 1280,
+			"pixelHeight": 800,
+			"dpi": 213,
+			"currentPixelWidth": 1280,
+			"currentPixelHeight": 800,
+			"touch": [
+				"SINGLE"
+			],
+			"video": {
+				"codecs": [
+					"H_264_42",
+					"H_264_41"
+				]
+			}
+		},
+		"Extensions": {
+			"available": {
+				"aplext:backstack:10": {}
+			}
+		},
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.b24dc7bb-cc63-436a-a7e2-c58da17056f7"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AFWZJHATX336XSXFVGOSOTUSXMY6S7GZSHASMSAHYNHFIM3UZHPMVUXCKHRUSYIYW5VKY3MBR6XPT6OVLCIA4TSE47C4U5FF2X6TQ4WQ3C4GICC5XAQOMQDLAN2YC6TOXKTTPGKDJRZNWI6X2IW5FBWEYPUQHE2CZTV43FVGJMYWRSBMWPUCMN5BO4OT5SPEMCW5ILQK7BWU6PA"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AGAXPMT26YND7EBUITH7OCX5BUXW3WNVTMCKSFV3SVWXPMIBONZOBVMH5MVVMF3FPG45UJOCSNVBTIZJMW5X4EEKPOVTRNRZ5XSSCYVKMO3UU7FTXXYX7VTDIF22MQQ4K6MRY5FHZWABVZT4MKDLPGVYXYUA",
+				"supportedInterfaces": {}
+			},
+			"apiEndpoint": "https://api.eu.amazonalexa.com",
+			"apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmIyNGRjN2JiLWNjNjMtNDM2YS1hN2UyLWM1OGRhMTcwNTZmNyIsImV4cCI6MTYwMzg2MDQxOCwiaWF0IjoxNjAzODYwMTE4LCJuYmYiOjE2MDM4NjAxMTgsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFCaDdVcVJpd2lpelYzWjM1eksreEV4SkFFQUFBQUFBQUJibmxBVmdwTzZzQ0hOWTdPTzBRUWtEQTdyRFh6cGZyeTI0U2dPS2FtSGNjQTFIMjRuTkFwV1c1ZzNQdWxXRHJDTHFNdWdpUXNNcUc1dVlpeFFlTHJESFEzZ2hGdkd0WXJIclF5TGM1eWVuSllVMGxjMXRFZ2p0ZFVyOHlPbk12MXBhRFlIZm4vZ1FqdlVDZ1hSZE9yNVdFRW8wY0o0czBubUVjd1JnUndmbFVQeW5HYUFWMGIxdXRLRk9BdnlGQ2IyYXppS2hYNEhEWnpqSU4xY1FJNEVqcUlNYkxoZHpCeWRkZlBuRWhpSmNha2FSZXBhYmxhZ2d1ZVpnMkhZOXlQWmRaNWsveTJxM3cybnY2Ymtya2I5S3FxbVpvY3lKcWFyWS81Mno0WVBKOU1ib3VtcFdCb2ZqVmUzaFpZNUhlNk5ZZzc0SkJ2RGhYM1loODQvcjZ4VmdtZ05XTE1TQnBtMnk0Tk1zWUVrVUlJTFVoWUl6RXdJcnNLTU9ZZ1hLc1czSEdOSSIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFHQVhQTVQyNllORDdFQlVJVEg3T0NYNUJVWFczV05WVE1DS1NGVjNTVldYUE1JQk9OWk9CVk1INU1WVk1GM0ZQRzQ1VUpPQ1NOVkJUSVpKTVc1WDRFRUtQT1ZUUk5SWjVYU1NDWVZLTU8zVVU3RlRYWFlYN1ZURElGMjJNUVE0SzZNUlk1RkhaV0FCVlpUNE1LRExQR1ZZWFlVQSIsInVzZXJJZCI6ImFtem4xLmFzay5hY2NvdW50LkFGV1pKSEFUWDMzNlhTWEZWR09TT1RVU1hNWTZTN0daU0hBU01TQUhZTkhGSU0zVVpIUE1WVVhDS0hSVVNZSVlXNVZLWTNNQlI2WFBUNk9WTENJQTRUU0U0N0M0VTVGRjJYNlRRNFdRM0M0R0lDQzVYQVFPTVFETEFOMllDNlRPWEtUVFBHS0RKUlpOV0k2WDJJVzVGQldFWVBVUUhFMkNaVFY0M0ZWR0pNWVdSU0JNV1BVQ01ONUJPNE9UNVNQRU1DVzVJTFFLN0JXVTZQQSJ9fQ.A3VfBM9f2bJ1ENg-eu6J9xQxtsbqHD5SmCgWbgIA16O7XBztuC8Q8dVDM8EI75en_OPWAxOSeyrlm_Z42u_p8_qxYQHFHekkAJ8oMDhfcdAwvmNe801ZhKHg5kFtWCRzMk22zp-o-lpBg_64-7Qp-ZsR9eGlPwICBdgXgBPMBzREqwzwOQnFtHHxs8dEpfz6eO_b7QXJr6eUy_3nC37iQi-xLOQr8EWrqC7k29m3UhlfPUG1CEYpK9PIbmG40PPI6SxL0yoHoB6tAl7qcL0kUjY5pFWnTfQVfQQnfjjRSe3kKaTweFAgtjQMdqUccNXzw0xvHaAcm0eEnkSwMHJQJQ"
+		}
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.b075821e-8538-4c4c-a2d1-432da03d407a",
+		"locale": "en-US",
+		"timestamp": "2020-10-28T04:41:58Z",
+		"intent": {
+			"name": "SensorManagerIntent",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"Sensor_Values": {
+					"name": "Sensor_Values",
+					"value": "humidity",
+					"resolutions": {
+						"resolutionsPerAuthority": [
+							{
+								"authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.b24dc7bb-cc63-436a-a7e2-c58da17056f7.measurment_type",
+								"status": {
+									"code": "ER_SUCCESS_MATCH"
+								},
+								"values": [
+									{
+										"value": {
+											"name": "humidity",
+											"id": "43aa11d087acb432f887266cf9128bc3"
+										}
+									}
+								]
+							}
+						]
+					},
+					"confirmationStatus": "NONE",
+					"source": "USER"
+				}
+			}
+		},
+		"dialogState": "COMPLETED"
+	}
+}

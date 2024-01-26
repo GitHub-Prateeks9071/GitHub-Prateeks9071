@@ -1,0 +1,238 @@
+create basic_table
+select * from user_object where object_type = 'table'
+select * from user_table
+select * from new_table
+select * from user_tab_columns
+create table new_table
+(
+    roll number,
+    name varchar2(100),
+    dob date
+)
+
+--drop table new_table
+
+alter table new_table add(city varchar2(100))
+alter table new_table drop(city)
+alter table new_table rename column roll to roll_number
+alter table new_table modify(name varchar2(200))
+
+
+create basic_table
+select * from user_object where object_type = 'table'
+select * from user_table
+select * from user_tab_columns
+
+create basic_1table
+CREATE table new_2table
+(
+    roll number,
+    name varchar2(100),
+    dob date,
+    city varchar2(100)
+)
+
+drop table new_2table
+alter table new_2table add(city varchar2(100))
+alter table new_2table drop(city)
+alter table new_2table rename column roll to roll_number
+alter table new_2table modify(name varchar2(200))
+renAME new_2table to My_2_table
+
+
+
+
+
+insert into new_2table(roll,name,dob,city)
+values(23,'suraj',to_date('12-11-2022','dd-mm-yyyy'),'kolhapur');
+
+
+select * from new_2table
+
+select to_date('10-jan-2022','dd-mm-yyyy') from dual
+
+alter table new_2table modify(roll varchar2(100))
+
+delete from new_2table where roll = 23
+delete from new_2table where name = 'suraj'
+
+update new_2table set city = 'sangli' where roll = 23
+
+------------------------task----------------------------------------
+create basic_table
+select * from user_object where object_type = 'table'
+select * from user_table
+select * from user_tab_columns
+
+create basic_1table
+CREATE table new_2table
+(
+    roll number,
+    name varchar2(100),
+    dob date,
+    city varchar2(100)
+)
+drop table new_2table
+
+insert into new_2table(roll,name,dob,city)
+values(23,'suraj',to_date('12-11-2022','dd-mm-yyyy'),'kolhapur');
+
+insert into new_2table(roll,name,dob,city)
+values(23,'amit',to_date('12-11-2022','dd-mm-yyyy'),'sangli');
+
+insert into new_2table(roll,name,dob,city)
+values(23,'aditya',to_date('12-11-2022','dd-mm-yyyy'),'kolhapur');
+
+insert into new_2table(roll,name,dob,city)
+values(23,'pratik',to_date('12-11-2022','dd-mm-yyyy'),'sangli');
+
+select * from new_2table
+
+update new_2table set city = 'satara' where city = 'kolhapur'
+
+delete from new_2table where city = 'satara'
+
+
+-------------------------------------tcl-----------------------------------------
+
+CREATE table new_2table
+(
+    roll number,
+    name varchar2(100),
+    dob date,
+    city varchar2(100)
+)
+---drop table new_2table
+
+insert into new_2table(roll,name,dob,city)
+values(23,'suraj',to_date('12-11-2022','dd-mm-yyyy'),'kolhapur');
+
+insert into new_2table(roll,name,dob,city)
+values(23,'amit',to_date('12-11-2022','dd-mm-yyyy'),'sangli');
+
+insert into new_2table(roll,name,dob,city)
+values(23,'aditya',to_date('12-11-2022','dd-mm-yyyy'),'kolhapur');
+
+insert into new_2table(roll,name,dob,city)
+values(23,'pratik',to_date('12-11-2022','dd-mm-yyyy'),'sangli');
+
+select * from new_2table;
+rollback;
+
+
+select * from new_2table;
+commit;
+
+select * from new_2table;
+
+-----------------------------------------------------------------------------------------------------------------------------------
+select * from user_tables;
+select * from books;
+
+create table books
+(
+book_ISBN number primary key,
+book_title varchar2(100) not null,
+book_category varchar2(50) check (book_category = 'programming'),
+book_edition varchar2(100),
+book_barcode_number number unique
+
+);
+  drop table books;
+insert into books (book_ISBN,book_title,book_category,book_edition,book_barcode_number) values (907, 'Let us java', 'programming' , '3rd' ,234556);
+
+insert into books (book_ISBN,book_title,book_category,book_edition,book_barcode_number) values (908, 'Hindi sahitya', 'Historical' , '2nd' ,2323556);
+
+insert into books (book_ISBN,book_title,book_category,book_edition,book_barcode_number) values (909, 'java', 'programming' , '6th' ,2324246);
+
+
+
+_________________________________________________________________________________________________________________________
+ PROJECT 2									
+___________________________________________________________________________________________________________________________________________
+create table lms_suppliers_details
+(
+    supplier_id varchar2(3) primary key,
+    supplier_name varchar2(30) not null,
+    address varchar2(50),
+    contact number(10) not null,
+    email varchar2(15) not null
+);
+
+insert into lms_suppliers_details values('100','Aditya_patil','At/post Shigaon',1234567890,'adit@gmail.com');
+insert into lms_suppliers_details values('101','Amit_sutrave','At/post latur',9876543210,'amit@gmail.com');
+insert into lms_suppliers_details values('102','prateek_sing','At/post pune',554445644,'pratk@gmail.com');
+
+--drop table gairave_lms_suppliers_details;
+select * from lms_suppliers_details;
+
+create table lms_members
+(
+    member_id varchar2(10) primary key,
+    member_name varchar2(30) not null,
+    city varchar2(20) not null,
+    date_register date not null,
+    date_expired date,
+    membership_status varchar2(15) not null
+);
+
+insert into lms_members values('000001','Suraj_patil','At/post Satara',to_date('10-07-2022','dd-mm-yyyy'),to_date('10-07-2023','dd-mm-yyyy'),'Active');
+insert into lms_members values('000002','Hrushikesh','At/post marthvada',to_date('10-07-2022','dd-mm-yyyy'),to_date('10-07-2023','dd-mm-yyyy'),'Active');
+insert into lms_members values('000003','Abhishek','At/post MP',to_date('10-07-2022','dd-mm-yyyy'),to_date('10-07-2023','dd-mm-yyyy'),'Active');
+
+--drop table guarav_lms_members;
+select * from lms_members;
+
+create table fine_details
+(
+    fine_range varchar2(3) primary key,
+    fine_amount number(3) not null,
+    max_day_delayed number
+);
+
+insert into fine_details values('100',100.00,10);
+insert into fine_details values('200',200.00,20);
+insert into fine_details values('300',300.00,30);
+
+drop table fine_details;
+select * from fine_details;
+
+create table lms_book_details
+(
+    book_code varchar2(10) primary key,
+    book_title varchar2(100) not null,
+    category varchar2(15) not null,
+    author varchar2(30) not null,
+    publication varchar2(30),
+    publish_date date,
+    book_edition number,
+    price number(8,2) not null,
+    rack_num varchar2(3),
+    data_arrival date,
+    supplier_ide varchar2(3),
+    constraint detail foreign key(supplier_ide) references lms_suppliers_details(supplier_id)
+);
+
+insert into lms_book_details values('1001','abcd','java','aditya','patil',to_date('15-04-2017','dd-mm-yyyy'),10,100.45,'111',to_date('24-08-2020','dd-mm-yyyy'),'100');
+insert into lms_book_details values('1002','gchg','c','amit','sutrave',to_date('10-09-2018','dd-mm-yyyy'),24,220.45,'112',to_date('16-05-2021','dd-mm-yyyy'),'104');
+insert into lms_book_details values('1003','gfrh','python','prateek','sing',to_date('27-05-2014','dd-mm-yyyy'),21,250.45,'113',to_date('02-08-2020','dd-mm-yyyy'),'101');
+insert into lms_book_details values('1004','likj','angular','suraj','patil',to_date('30-04-2019','dd-mm-yyyy'),14,300.45,'114',to_date('16-08-2021','dd-mm-yyyy'),'102');
+
+drop table lms_book_details;
+select * from lms_book_details;
+
+create table lms_book_lssue
+(
+    book_issue_no number primary key,
+    member_ide varchar2(10),
+    book_codee varchar2(10),
+    date_issue date,
+    date_return date,
+    date_returned date,
+    fine_rangee varchar2(3),
+    constraint detail1 foreign key(member_ide) references lms_members(member_id),
+    constraint detail2 foreign key(book_codee) references lms_book_details(book_code),
+    constraint detail3 foreign key(fine_rangee) references fine_details(fine_range)
+)
+
+

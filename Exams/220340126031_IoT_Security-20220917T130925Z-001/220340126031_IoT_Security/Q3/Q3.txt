@@ -1,0 +1,31 @@
+Q3. Implement register and login services with password hashing.
+
+Answer:
+
+There are 3 files attached: 
+
+1. For login -> login.html
+2. For Registration -> register.html
+3. Key -> key.pem
+
+Hashing turns your password  into a short string of letters or numbers using an encryption algorithm. 
+If a website is hacked, cyber criminals don't get access to your password. 
+Instead, they just get access to the encrypted hash created by your password.
+
+If you store usernames and passwords in your application, whatever you do, do not store passwords in plain text,
+If your system gets breached, an attacker will be able to simply read these plain text passwords and impersonate users. 
+
+To avoid the dreaded plain text password, you’ll want to store a hashed version of your users’ passwords. 
+For that, you’ll need a password hashing algorithm.
+
+
+Password hashing algorithms are :
+
+There are different types of hashing algorithms, but password hashing algorithms are one-way functions specifically designed for working with passwords.
+Password hashing algorithms convert a plain text password into a string of data you can safely store in a database that can never be reversed (you can transform a plain text password into a hash, but it’s impossible to transform a hash into a password, hence the name “one way” function).
+
+Password hashing workThe way you use password hashing algorithms is during user authentication. Every time a user sends you their password (in plain text), the password is hashed right away. Then the hash is either stored (for registration purposes) or matched against the user’s stored hash to verify that the password is correct (authentication).
+
+There are lots of hashing algorithms, but very few of them are good choices for passwords. Many types of hashing functions have specific use cases like checking the integrity of a file, for instance. These hashing algorithms are a poor choice for passwords.
+
+What you need is a strong password hashing algorithm for your users’ passwords. A good password hashing algorithm consumes a fair amount of computational power and memory. When talking about password hashing algorithms: the more computing resources they use, it will be the better.

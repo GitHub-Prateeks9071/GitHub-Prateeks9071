@@ -1,0 +1,29 @@
+<!DOCTYPE html> 
+    <head>
+        <script>
+            function changeColor()
+            {
+                var para = document.getElementById("p1");
+                para.style.color="blue";
+                para.style.backgroundColor = "lightgray";
+                para.style.font = "italic bold 30px arial,serif";
+            }
+            function revertColor()
+            {
+                var para = document.getElementById("p1");
+                para.style.color="black";
+                para.style.backgroundColor = "white";
+                para.style.font = "12px arial,serif";
+            }
+        </script>
+    </head> 
+    <body>
+        <div>
+            <p id="p1" onmouseover="changeColor()"
+                onmouseout="revertColor()"
+                onclick="f1()">
+                Hover with mouse to see color change
+            </p>
+        </div>
+    </body>
+</html>

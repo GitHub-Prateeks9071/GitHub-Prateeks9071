@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="ge.js" type="text/javascript"></script>
+	</head>
+	<body>
+		<input type="button" value="Submit" onclick="Greeting()">
+	</body>
+</html>

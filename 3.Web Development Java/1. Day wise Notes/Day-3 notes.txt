@@ -1,0 +1,24 @@
+<html>
+   <head>
+       <script>
+	      function greet(){
+		     document.write("Hello world <br>")
+		  }
+		  function greetUser(name){
+		    document.write("Hello " + name + "<br>")
+		  }
+		  function add(a, b){
+		     return a+b;
+		  }
+	   </script>
+   </head>
+   <body >
+	 <script>
+	   greet()
+	   greetUser("shrilata")
+	   document.write(add(10,20))
+	 </script>
+	   
+	</body>
+
+</html>

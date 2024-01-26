@@ -1,0 +1,33 @@
+Q1. How digital signatures work, and explain its use in the scenario of updating an IoT device Over The Air(OTA). 
+
+Answer:
+
+1. Digital signatures work by proving/declaring that a digital message or document was not modified intentionally or unintentionally from the time it was signed/authorised.
+
+2. Digital signatures do this by generating a unique hash of the message or document and encrypting it using the sender's private key.
+
+3. Digital signatures works as a verification of a person/user who uses any service over the internet and electronic devices.
+
+=> Its uses in the scenario of updating an IoT device Over The Air (OTA) are given below:
+
+1. Over-the-air (OTA) is the capability of wirelessly downloading an application, configuration, or firmware, to internet-enabled devices, popularly known as IoT. 
+
+2. It works in a similar fashion as our computers, laptops, tablets, and phones get updated.
+
+3. It can be used for updating IoT device Over The Air (OTA), because it has multiple access
+
+4. It can also be used as a verification of client for using the services.
+
+5. Asymmetric encryption – asymmetric encryption  is a cryptographic method that uses a key pair system. 
+One key, called the public key, encrypts the data. The other key, called the private key, decrypts the data.
+
+6. Public key cryptography can be used several ways to ensure confidentiality, integrity, and authenticity. 
+
+7. Public key cryptography can Ensure integrity by creating a digital signature of the message using the sender’s private key. 
+
+8. This is done by hashing the message and encrypting the hash value with their private key.
+By doing this, any changes to the message will result in a different hash value.
+
+9. Ensure confidentiality by encrypting the entire message with the recipient’s public key.
+This means that only the recipient, who is in possession of the corresponding private key, can read the message.
+Verify the user’s identity using the public key and checking it against a certificate authority.

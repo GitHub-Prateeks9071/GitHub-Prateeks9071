@@ -1,0 +1,26 @@
+Projects Assignment:
+1.Console ERP project
+Implement using dictionary:
+On First setup Add organization detail(New)
+	-Edit organization(New)
+	-Add Employee
+	-Delete Employee
+	-Search Employee by name
+	-Change Employee Data
+		=>Change name
+		=>change age
+		=>Change gender
+		=>change salary
+	-Manage All Teams(New)
+		-Create new Team(New)
+		-Display team(New)
+		-Manage Team(Particular Team)(New)
+			-Rename Team(optional)(New)
+			-Display Members(New)
+			-Add Members(New)
+			-Delete Members(New)
+		-Delete Team(New)
+	-Display 
+
+Properties:Empid, Name,age,gender,place,salary,previous_company,joining_date
+Date format "21/04/2021" dd/mm/yyyy

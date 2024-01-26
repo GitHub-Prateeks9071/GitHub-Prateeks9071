@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+    <head>
+        <script>
+            
+        </script>
+    </head>.
+    <body>
+        <script>
+            class Student
+            {
+                constructor(prnid,studname)
+                {
+                    this.prn = prnid
+                    this.sname = studname
+                }
+                display()
+                {
+                    document.write("<br>", this.prn,"<br>", this.sname, "<br>")
+                }
+            }
+            class GradStudent extends Student{
+                constructor(prn,sname,gpa)
+                {
+                    super(prn, sname)
+                    this.gpa = gpa
+                }
+            }
+            let gs1=new Student(6031,"Vaibhav");
+            let gs2=new Student(6021,"Prateek");
+            let gs3=new Student(6028,"Amit");
+            gs1.display()
+            gs2.display()
+            gs3.display()
+        </script>
+    </body>
+</html>

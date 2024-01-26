@@ -1,0 +1,96 @@
+Using locale 'en_IN'.
+
+
+Sat Apr  9 20:29:57 2022
+Command line: TestDisk /log
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 5.4.0-107-generic (#121~18.04.1-Ubuntu SMP Thu Mar 24 17:21:33 UTC 2022) x86_64
+Compiler: GCC 7.2
+ext2fs lib: 1.44.1, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.0
+User is not root!
+Hard disk list
+
+
+TestDisk exited normally.
+Using locale 'en_IN'.
+
+
+Sat Apr  9 20:30:22 2022
+Command line: TestDisk /log
+
+TestDisk 7.0, Data Recovery Utility, April 2015
+Christophe GRENIER <grenier@cgsecurity.org>
+http://www.cgsecurity.org
+OS: Linux, kernel 5.4.0-107-generic (#121~18.04.1-Ubuntu SMP Thu Mar 24 17:21:33 UTC 2022) x86_64
+Compiler: GCC 7.2
+ext2fs lib: 1.44.1, ntfs lib: libntfs-3g, reiserfs lib: none, ewf lib: none, curses lib: ncurses 6.0
+/dev/sda: LBA, LBA48, DCO support
+/dev/sda: size       1953525168 sectors
+/dev/sda: user_max   1953525168 sectors
+/dev/sda: dco        1953525168 sectors
+Warning: can't get size for Disk /dev/mapper/control - 0 B - 0 sectors, sector size=512
+Hard disk list
+Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63, sector size=512 - TOSHIBA DT01ACA100, S/N:79877AEMS, FW:MS2OA8L0
+
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 1000 GB / 931 GiB - TOSHIBA DT01ACA100
+Partition table type: EFI GPT
+Partition table type (auto): EFI GPT
+Disk /dev/sda - 1000 GB / 931 GiB - TOSHIBA DT01ACA100
+Partition table type: EFI GPT
+
+Analyse Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63
+check_part_gpt failed for partition
+ 1 P MS Reserved                   34      32767      32734 [Microsoft reserved partition]
+Current partition structure:
+No FAT, NTFS, ext2, JFS, Reiser, cramfs or XFS marker
+ 1 P MS Reserved                   34      32767      32734 [Microsoft reserved partition]
+ 1 P MS Reserved                   34      32767      32734 [Microsoft reserved partition]
+ 2 P MS Data                    32768  724721663  724688896 [Basic data partition]
+ 3 P MS Data                724721664 1543921663  819200000 [Basic data partition]
+Backup partition structure
+
+search_part()
+Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63
+NTFS part_offset=1048576, part_size=1000202043392, sector_size=512
+NTFS partition cannot be added (part_offset<part_size).
+     MS Data                     2048 1953521663 1953519616
+     NTFS, blocksize=4096, 1000 GB / 931 GiB
+
+interface_write()
+ 1 P MS Data                     2048 1953521663 1953519616
+
+search_part()
+Disk /dev/sda - 1000 GB / 931 GiB - CHS 121601 255 63
+NTFS part_offset=1048576, part_size=1000202043392, sector_size=512
+NTFS partition cannot be added (part_offset<part_size).
+     MS Data                     2048 1953521663 1953519616
+     NTFS, blocksize=4096, 1000 GB / 931 GiB
+NTFS part_offset=16777216, part_size=371040714752, sector_size=512
+NTFS partition cannot be added (part_offset<part_size).
+     MS Data                    32768  724721663  724688896
+     NTFS, blocksize=4096, 371 GB / 345 GiB
+heads/cylinder 2 (FAT) != 255 (HD)
+sect/track 36 (FAT) != 63 (HD)
+     MS Data                   171252     177011       5760 [NO NAME]
+     FAT12, blocksize=1024, 2949 KB / 2880 KiB
+     Mac HFS                   177012    1512015    1335004
+     HFS+ blocksize=2048 + Backup, 683 MB / 651 MiB
+     Mac HFS                  1512012    2847015    1335004
+     HFS+ blocksize=2048, 683 MB / 651 MiB
+     Mac HFS                   177012    1512015    1335004
+     HFS+ found using backup sector!, 683 MB / 651 MiB
+check_FAT: Unusual media descriptor (0xf8!=0xf0)
+heads/cylinder 64 (FAT) != 255 (HD)
+sect/track 32 (FAT) != 63 (HD)
+     MS Data                  4617728    4619775       2048 [UEFIboot]
+     FAT12, blocksize=512, 1048 KB / 1024 KiB
+NTFS part_offset=371057491968, part_size=419430400000, sector_size=512
+NTFS partition cannot be added (part_offset<part_size).
+     MS Data                724721664 1543921663  819200000
+     NTFS, blocksize=4096, 419 GB / 390 GiB
+Search for partition aborted
+SIGHUP detected! TestDisk has been killed.

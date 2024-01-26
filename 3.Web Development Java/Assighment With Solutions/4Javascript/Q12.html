@@ -1,0 +1,27 @@
+<html>
+	<script>
+		var p = parseInt(prompt("Enter principle : "))
+		var r = parseInt(prompt("Enter rate : "))
+		var n = parseInt(prompt("Enter period in years : "))
+		a = r/100
+		b = 1 + a
+		c = 1 
+		for(i=0;i<n;i++)
+		{
+			c = c*b
+		}
+		d = p * c
+		e = d - p
+		 	
+	</script>
+	<body>
+	<br>
+		Calculate Compound Interest<br>
+		<script>
+			document.write("Principle"+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+p+"<br>")
+			document.write("Rate of Interest"+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+r+"<br>")
+			document.write("Period"+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+n+"<br>")
+			document.write("Comp Interest"+"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp"+e)
+		</script>
+	</body>
+</html>

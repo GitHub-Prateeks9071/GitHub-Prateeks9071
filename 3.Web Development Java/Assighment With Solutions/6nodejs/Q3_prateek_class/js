@@ -1,0 +1,51 @@
+
+class Circle {
+    constructor(radius) {
+        this.radius = radius
+    }
+    calcArea() {
+        console.log("Area of Circle is: " + (Math.PI * this.radius * this.radius))
+    }
+    calcCircumference() {
+        console.log("Circumference of Circle is: " + (2 * Math.PI * this.radius))
+    }
+    calcDiameter() {
+        console.log("Diameter of Circle is: " + (this.radius * 2))
+    }
+}
+
+class Rectangle {
+    constructor(length, breadth) {
+        this.length = length
+        this.breadth = breadth
+    }
+    calcArea() {
+        console.log("Area of Rectangle is: " + (this.length * this.breadth))
+    }
+    calcPerimeter() {
+        console.log("Perimeter of Rectangle is: " + (2 * (this.length + this.breadth)))
+    }
+}
+
+class Triangle {
+    constructor(side1, side2, side3) {
+        this.side1 = side1
+        this.side2 = side2
+        this.side3 = side3
+    }
+    isEquilaterial() {
+        if(this.side1 == this.side2 && this.side2 == this.side3) {
+            console.log("The Given Triangle is Equilaterial")
+        }
+        else {
+            console.log("The Given Triangle is Not Equilaterial")
+        }
+    }
+    calcPerimeter() {
+        console.log("Perimeter of Rectangle is: " + (this.side1 + this.side2 + this.side3))
+    }
+}
+
+exports.circle = Circle
+exports.rectangle = Rectangle
+exports.triangle = Triangle

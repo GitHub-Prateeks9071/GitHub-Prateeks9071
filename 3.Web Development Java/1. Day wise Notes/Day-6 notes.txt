@@ -1,0 +1,154 @@
+- client side validation
+- event handling
+- DOM manipulation
+
+
+document methods:
+- write()
+- getElementById("uname")
+- getElementsByTagName("h1")  <p>
+- getElementsByClassName()
+- getElementsByName()
+
+<html>
+   <head>
+   <script>
+      function change(){   //event handler
+		
+		//document.getElementById("p1").innerHTML = "New contents!!"
+		console.log(document.getElementById("p1").innerHTML)
+	  }
+    </script>
+   </head>
+   <body>
+	  <form>
+	     <p id="p1"> This is para-1</p>
+		 
+		 <input type="button" value="change contents" onclick="change()"><br>
+	  </form>
+	</body>
+
+</html>
+
+
+---------------------------------------------
+
+
+client side validation:
+- Field level validation
+- Form level validation
+
+
+------- field level validation ----------
+
+<html>
+   <head>
+   <style>
+       span{color:red}
+   </style>
+   <script>
+      function validateName(){   //event handler
+		let name = document.getElementById("uname").value
+		if(name == null || name == "" || name.length == 0)
+		    alert("name is required!!")
+		else if (name.length < 5 || name.length > 10){
+		    document.getElementById("s1").innerHTML = "name is incorrect length"
+			document.getElementById("uname").focus()
+		}
+	  }
+	  
+	  function validateAge(){   //event handler
+		let age = document.getElementById("age").value
+		if(age == null || age == "" || age.length == 0)
+		    alert("Age is required!!")
+		else if(! isFinite(age))
+		   alert("age should be a number")
+		else if(age < 18 || age > 60)
+		    alert ("invlid age")
+	  }
+    </script>
+   </head>
+   <body>
+	  <form>
+	    User name : <input id="uname" name="uname" onchange="validateName()" autofocus><span id="s1"></span><br>
+		User age : <input id="age" name="age" onchange="validateAge()" ><span id="s2"></span><br>
+		<input type="submit" value="submit">
+		
+				
+	  </form>
+	</body>
+
+</html>
+
+
+
+-----------  form level validation   ---------------
+
+<html>
+   <head>
+   <style>
+       span{color:red}
+   </style>
+   <script>
+      function validateName(){   //event handler
+		let name = document.getElementById("uname").value
+		if (name.length < 5 || name.length > 10){
+		    document.getElementById("s1").innerHTML = "name is incorrect length"
+			document.getElementById("uname").focus()
+			return false;
+		}
+		else return true;
+	  }
+	  
+	  function validateAge(){   //event handler
+		let age = document.getElementById("age").value
+		if(! isFinite(age)){
+		   alert("age should be a number")
+		   return false
+		 }
+		else if(age < 18 || age > 60){
+		    alert ("invlid age")
+			return false
+	    }
+		else return true;
+	  }
+	  
+	  function validate(){
+	    if(validateName() && validateAge())
+		    return true;
+		else return false
+	  }
+	  
+    </script>
+   </head>
+   <body>
+	  <form onsubmit= "return validate()">
+	    User name : <input id="uname" 
+		                   name="uname" 
+						   required 
+						   autofocus><span id="s1"></span><br>
+		User age : <input id="age" 
+		                  name="age"
+						  required><span id="s2"></span><br>
+						  
+		<input type="submit" value="submit">
+		
+				
+	  </form>
+	</body>
+
+</html>
+
+--------------------------
+
+
+
+
+
+
+
+
+
+
+
+

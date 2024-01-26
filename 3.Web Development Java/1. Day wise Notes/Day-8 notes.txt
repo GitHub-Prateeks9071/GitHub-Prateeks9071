@@ -1,0 +1,105 @@
+CSS selectors:   to change the style
+- tag
+- id
+- class
+
+p{....}
+
+jquery selectors:   to change the behavior! at runtime!!
+- tag
+- id
+- class
+
+$("p")  - selects ALL para
+$("h1")  - selects ALL h1 tags
+$("a") - selects ALL anchor tags
+$("div")  - selects ALL divs
+
+$("div,p") - selects ALL para and all divs
+
+$("div p") - - selects ALL paras within a div
+
+$("#p1")  - select that element whose id is p1
+
+$("#p1, #h3, #ww")  - select that element whose ids are p1, h3, ww
+
+$(".c1")  - select all elements which have the class c1 applied
+
+$(".c1, .c2")  - select all elements which have the class c1 or c2 applied
+
+ready()
+hide()
+show()
+css()
+length
+each()
+val()
+html()
+text()
+attr()
+append()
+
+$(element).append(new content)
+
+(new content).appendTo($(selected element))
+
+
+paras.each(function(){
+           console.log($(this).html())
+         })
+
+--------------------
+
+paras.each(function(index){
+           console.log(index, $(this).html())
+         })
+
+-----------------------
+
+paras.each(function(index, element){
+           console.log(element.html())
+         })
+
+---------------------------
+
+event handling------------
+
+$("input")  - select all forms element with <input> tag
+
+$(":input") - select all forms element, incl textarea and select
+
+$(":input[type=text]")
+
+$(":text")
+$(":radio")
+
+
+
+
+<form method="post" >
+         UserName : <input type="text" name="uname"> <br>
+         Password : <input type="password"  name="password"> <br>
+         gender : <input type="radio" name="r1">Male
+         <input type="radio" name="r1">Female  <br>
+         <input type="submit" value="login" >
+       <input type="reset">
+      </form>
+
+
+
+2 ways of handling events:
+
+- $(element).event(function(){})
+
+   eg $("btn1").click(function(){})
+
+- on(), off()
+   $("p1").on(click mouseover keypress, function(){})
+
+
+
+
+
+
+
+

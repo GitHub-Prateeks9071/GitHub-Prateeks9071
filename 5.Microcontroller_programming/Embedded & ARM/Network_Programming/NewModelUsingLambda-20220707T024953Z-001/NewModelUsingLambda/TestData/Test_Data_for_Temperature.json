@@ -1,0 +1,121 @@
+{
+	"version": "1.0",
+	"session": {
+		"new": false,
+		"sessionId": "amzn1.echo-api.session.3974f39e-410d-4786-846f-ea5bce891d12",
+		"application": {
+			"applicationId": "amzn1.ask.skill.b24dc7bb-cc63-436a-a7e2-c58da17056f7"
+		},
+		"user": {
+			"userId": "amzn1.ask.account.AFWZJHATX336XSXFVGOSOTUSXMY6S7GZSHASMSAHYNHFIM3UZHPMVUXCKHRUSYIYW5VKY3MBR6XPT6OVLCIA4TSE47C4U5FF2X6TQ4WQ3C4GICC5XAQOMQDLAN2YC6TOXKTTPGKDJRZNWI6X2IW5FBWEYPUQHE2CZTV43FVGJMYWRSBMWPUCMN5BO4OT5SPEMCW5ILQK7BWU6PA"
+		}
+	},
+	"context": {
+		"Viewports": [
+			{
+				"type": "APL",
+				"id": "main",
+				"shape": "RECTANGLE",
+				"dpi": 213,
+				"presentationType": "STANDARD",
+				"canRotate": false,
+				"configuration": {
+					"current": {
+						"video": {
+							"codecs": [
+								"H_264_42",
+								"H_264_41"
+							]
+						},
+						"size": {
+							"type": "DISCRETE",
+							"pixelWidth": 1280,
+							"pixelHeight": 800
+						}
+					}
+				}
+			}
+		],
+		"Viewport": {
+			"experiences": [
+				{
+					"arcMinuteWidth": 346,
+					"arcMinuteHeight": 216,
+					"canRotate": false,
+					"canResize": false
+				}
+			],
+			"shape": "RECTANGLE",
+			"pixelWidth": 1280,
+			"pixelHeight": 800,
+			"dpi": 213,
+			"currentPixelWidth": 1280,
+			"currentPixelHeight": 800,
+			"touch": [
+				"SINGLE"
+			],
+			"video": {
+				"codecs": [
+					"H_264_42",
+					"H_264_41"
+				]
+			}
+		},
+		"Extensions": {
+			"available": {
+				"aplext:backstack:10": {}
+			}
+		},
+		"System": {
+			"application": {
+				"applicationId": "amzn1.ask.skill.b24dc7bb-cc63-436a-a7e2-c58da17056f7"
+			},
+			"user": {
+				"userId": "amzn1.ask.account.AFWZJHATX336XSXFVGOSOTUSXMY6S7GZSHASMSAHYNHFIM3UZHPMVUXCKHRUSYIYW5VKY3MBR6XPT6OVLCIA4TSE47C4U5FF2X6TQ4WQ3C4GICC5XAQOMQDLAN2YC6TOXKTTPGKDJRZNWI6X2IW5FBWEYPUQHE2CZTV43FVGJMYWRSBMWPUCMN5BO4OT5SPEMCW5ILQK7BWU6PA"
+			},
+			"device": {
+				"deviceId": "amzn1.ask.device.AGAXPMT26YND7EBUITH7OCX5BUXW3WNVTMCKSFV3SVWXPMIBONZOBVMH5MVVMF3FPG45UJOCSNVBTIZJMW5X4EEKPOVTRNRZ5XSSCYVKMO3UU7FTXXYX7VTDIF22MQQ4K6MRY5FHZWABVZT4MKDLPGVYXYUA",
+				"supportedInterfaces": {}
+			},
+			"apiEndpoint": "https://api.eu.amazonalexa.com",
+			"apiAccessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IjEifQ.eyJhdWQiOiJodHRwczovL2FwaS5hbWF6b25hbGV4YS5jb20iLCJpc3MiOiJBbGV4YVNraWxsS2l0Iiwic3ViIjoiYW16bjEuYXNrLnNraWxsLmIyNGRjN2JiLWNjNjMtNDM2YS1hN2UyLWM1OGRhMTcwNTZmNyIsImV4cCI6MTYwMzg1OTY4NiwiaWF0IjoxNjAzODU5Mzg2LCJuYmYiOjE2MDM4NTkzODYsInByaXZhdGVDbGFpbXMiOnsiY29udGV4dCI6IkFBQUFBQUFBQVFCaDdVcVJpd2lpelYzWjM1eksreEV4SkFFQUFBQUFBQUJsWVdMZ1Q0V05JWVhXNG1TYlhhai9jNC8vSWI5YjlESCt4eUhDNXFyMk5Ob1Q4NjNpQUhOdmxxMmpFUllvaDB6aWU5d2gvRm5SdGZkQTZCQS9NNlRsdk1sbmdRY0ZkSUVRR3R0TkNOZm5tMHI4Ulp4Z3BKeDNnek1uTm1VQ0VOTXUzcDI2S0UzdS82Mnhra05WUWw1TW9kODFCbGdYS28ySUR6aGZ0MHpsdU1abmRuU1FreExmYSsrS0lyVjM1bStIdnRCL2kwRlhRYWM4cjJNdEFWNzYvN1IvOC9kM0g5TEt0S0RkUm5mc2FQY3A3elROTW4yVmhFSHV2NXowR1NtcmMyU3FWMXNoczI0VmluWnVjbENmTGdtQzMxTERyK0FWelB5M0dONUtYT3Z5VkdoRVRLUXV5dkcwNUp3aGdESCtpV0dObzBKT1lzalVjK0hrVTlOY01ZNDlLREY3dUFhUVVVTFZVakVQZnV4T2tiZ0lTdGx5dDVqTTc0Y3kwSkJUM1ArNiIsImNvbnNlbnRUb2tlbiI6bnVsbCwiZGV2aWNlSWQiOiJhbXpuMS5hc2suZGV2aWNlLkFHQVhQTVQyNllORDdFQlVJVEg3T0NYNUJVWFczV05WVE1DS1NGVjNTVldYUE1JQk9OWk9CVk1INU1WVk1GM0ZQRzQ1VUpPQ1NOVkJUSVpKTVc1WDRFRUtQT1ZUUk5SWjVYU1NDWVZLTU8zVVU3RlRYWFlYN1ZURElGMjJNUVE0SzZNUlk1RkhaV0FCVlpUNE1LRExQR1ZZWFlVQSIsInVzZXJJZCI6ImFtem4xLmFzay5hY2NvdW50LkFGV1pKSEFUWDMzNlhTWEZWR09TT1RVU1hNWTZTN0daU0hBU01TQUhZTkhGSU0zVVpIUE1WVVhDS0hSVVNZSVlXNVZLWTNNQlI2WFBUNk9WTENJQTRUU0U0N0M0VTVGRjJYNlRRNFdRM0M0R0lDQzVYQVFPTVFETEFOMllDNlRPWEtUVFBHS0RKUlpOV0k2WDJJVzVGQldFWVBVUUhFMkNaVFY0M0ZWR0pNWVdSU0JNV1BVQ01ONUJPNE9UNVNQRU1DVzVJTFFLN0JXVTZQQSJ9fQ.JpVTaN1fwpkIbX0WoXSDIaBXLyOm2zAXjoATNyXDJ7MoqAj-pugfxgIiodgZRN16nTTUF5ebMOvLCTAegvm3Pr-BqDXMSwPiGRnJ9Ojg7PMMRA6sSwrK3tL1dxginwh-Xq3Zu0ghuc3m0n6mbYx-SE7ya5fya2BRStFU3u_5077tRey0OXzLUO-i5zAx_LZ1EXYmYuSDLLQVRKQGVEp-TCKaFmXgHr0qXrjnLtBFB4H8wL7eLIVne67qzzAJ8y23_4jX5b-6nP8ouPPmKBeCpBt53AO2p0BQdMoSeDQsasUn8RkG8ZT2Zcd8k-_NT0sDytmPRuPFzha6KzXxzsJhOg"
+		}
+	},
+	"request": {
+		"type": "IntentRequest",
+		"requestId": "amzn1.echo-api.request.18b027cf-7ceb-4951-8984-4be9e940076e",
+		"locale": "en-US",
+		"timestamp": "2020-10-28T04:29:46Z",
+		"intent": {
+			"name": "SensorManagerIntent",
+			"confirmationStatus": "NONE",
+			"slots": {
+				"Sensor_Values": {
+					"name": "Sensor_Values",
+					"value": "temperature",
+					"resolutions": {
+						"resolutionsPerAuthority": [
+							{
+								"authority": "amzn1.er-authority.echo-sdk.amzn1.ask.skill.b24dc7bb-cc63-436a-a7e2-c58da17056f7.measurment_type",
+								"status": {
+									"code": "ER_SUCCESS_MATCH"
+								},
+								"values": [
+									{
+										"value": {
+											"name": "temperature",
+											"id": "eef438f7e448aa48c1f8db568d27b591"
+										}
+									}
+								]
+							}
+						]
+					},
+					"confirmationStatus": "NONE",
+					"source": "USER"
+				}
+			}
+		},
+		"dialogState": "COMPLETED"
+	}
+}

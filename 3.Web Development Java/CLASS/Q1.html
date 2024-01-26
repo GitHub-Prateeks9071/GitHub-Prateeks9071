@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+       <script> 
+     arr=[]
+     var i=0
+
+    function obj(){
+      var product=document.getElementById("add").value
+      var rate=parseInt(document.getElementById("rate").value)  
+      var Quantity=parseInt(document.getElementById("quan").value) 
+        var price=rate*quantity
+        var discount
+
+        if(Quantity<25)
+        {
+            document.write="No Discount"
+        }
+
+        if(Quantity>25 && Quantity <50)
+        {
+            document.write="Offer 10% Discount"
+        }
+
+        if(Quantity>50)
+        {
+            document.write="Offer 20% Discount"
+        }
+    }
+
+    function display(){
+
+    document.write("arr")
+
+    }
+    </Script>
+	</head>
+
+	<body >
+        <form>
+		<fieldset style="background-color:yellow" id="1">
+		
+		
+			<legend >PRODUCT  DETAILLS</legend> 
+			Product Name : <input type="text" id ="add">  <br>
+			 Rate : <input type="digit" id="rate"> <br>
+			 Quantity : <input id ="digit" id="quan">  <br>
+			<input type ="button" value="Add Product " onclick="obj()">
+            <input type ="button" value="Display the products " onclick="display()">
+	
+		</fieldset>
+        </form>
+	
+	</body>
+
+
+</html>

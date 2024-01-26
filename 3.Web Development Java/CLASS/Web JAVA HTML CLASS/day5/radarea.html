@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function circ() {
+        
+            let radius = parseInt(document.getElementById("radius").value)
+           
+document.getElementById("area").innerHTML="Area of circle is : <br>" + (radius * radius* 3.14)             
+document.getElementById("circumference").innerHTML="<br>Circumference of circle is : <br>" + (2*3.14*radius)
+}
+    </script>
+</head>
+
+<body>
+    <form>
+        Radius : <input name="radius" id="radius"><br>
+        <input type="button" value="Result" onclick="circ()"> <br>
+        <span id="area"></span>
+        <span id="circumference"></span>
+    </form>
+</body>
+
+</html>

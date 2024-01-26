@@ -1,0 +1,8 @@
+print("prateek singh")
+a=10;
+b=20;
+
+print("division",a/b);
+print("addition",a+b);
+print("substraction",a-b);
+print("multiplicatioin",a*b);

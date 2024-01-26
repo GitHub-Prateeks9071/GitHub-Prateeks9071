@@ -1,0 +1,10 @@
+SMART-HOME
+
+smart_home_server.js
+register.html
+validate_home.html
+welcome_home.html
+otp_verification.html
+login_page.html
+invalidate_home.html
+key.pem

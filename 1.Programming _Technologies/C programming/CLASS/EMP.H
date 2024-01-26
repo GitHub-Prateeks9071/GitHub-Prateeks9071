@@ -1,0 +1,17 @@
+struct Date{
+        int day;
+        int month;
+        int year;    
+}; 
+struct Address{
+        int flatNo;
+        char City[100];
+        char State[100];
+        
+};  
+struct Employee{
+        char name[100];
+        int EmpId;
+        struct Date dob;
+        struct Address add;
+};

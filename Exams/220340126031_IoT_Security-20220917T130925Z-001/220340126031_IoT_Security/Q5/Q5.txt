@@ -1,0 +1,71 @@
+Threat Model Report for Smart Home Use Case
+
+
+
+Switch for Light and Switch for Fan are connected to System/Computer via HTTPS which is accessed by user/owner
+.
+.
+HTTPS
+.
+.
+Request for turning ON/OFF the Light  
+Response for turning ON/OFF the Light
+&&
+Request for turning ON/OFF the Fan 
+Response for turning ON/OFF the Fan
+.
+.
+AWS Cloud Service IoT
+.
+.
+HTTPS
+. 
+.
+Router
+.
+.
+HTTPS
+.
+.
+SMART DEVICES (i.e., Smart Light and Smart Fan)
+
+Report For SMART HOME 
+
+Table Of Contents
+
+	1. Threats
+	2. Security Requirements
+
+
+
+
+
+1. Threats
+
+	Source				Risk				Status
+
+	Gateway				very low 			open 
+			
+	Router				very low 			open
+
+	AWS IoT				very low 			open
+		
+	Router				very low 			open
+	
+	Smart Device 			very low 			open
+
+
+2. Security Requirements
+		
+	Components:			Source				
+
+
+	Gateway				Gateway			
+			
+	Router				Router	 			
+
+	AWS IoT				AWS IoT				
+		
+	Router				Router				
+	
+	Smart Device 	    Smart Device			

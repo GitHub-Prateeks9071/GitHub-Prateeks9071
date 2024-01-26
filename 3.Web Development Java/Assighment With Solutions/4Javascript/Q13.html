@@ -1,0 +1,37 @@
+
+<html>
+    <head>
+        <script>
+
+        </script>
+    </head>
+    <body>
+        <script>
+            let d1=new Date()
+           
+            let date=d1.setDate(24)
+            let mon=d1.setMonth(3)
+            let y=d1.setYear(2000)
+            let day=d1.getDay()
+            var hour=d1.getHours()
+            var minute=d1.getMinutes()
+            var second=d1.getSeconds()
+            if (hour < 12) 
+            {  
+           	 welcome = "Good Morning to you";  
+            } 
+            else if (hour < 17) 
+            {  
+           	 welcome = "Good Afternoon to you";  
+            } 
+		    else
+		    {  
+		  	  welcome = "Good Evening to you";  
+		    }  
+            let daylist=["SUNDAY","MONDAY","TUESDAY","WEDNESDAY","THURSDAY","FRIDAY","SATURDAY"]
+            document.write("Today is " +daylist[day] +"," +" 24" +" April" +" 2000, Welcome, and " +welcome)
+            
+
+        </script>
+    </body>
+</html>

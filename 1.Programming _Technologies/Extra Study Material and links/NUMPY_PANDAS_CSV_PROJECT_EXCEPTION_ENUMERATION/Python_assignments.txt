@@ -1,0 +1,214 @@
+"Click Open link on the dialog shown by your browser"
+Note: Use above string in below questions.
+Write code in python
+1.Fetch "browser"
+2.Fetch "link"
+3.Convert Whole string to uppercase
+4.Convert whole string to lowercase
+5.Convert "Click" to upper case in string
+6.Convert "Open" and "browser" to upper case in string
+7.Print "Open link: in reverse order
+
+num="1,2,3,4,5,6,7,8,9"
+Note:Use num string in below questions:
+1.Print only numbers not comma
+2.Print all even numbers
+3.Fetch "1" and "5" from string and perform numerical addition
+4.Fetch "2" and "8" from string and perfrom numerical muliplication
+_______________________________________________________________________
+
+1.Write a code to find out which number is greater out of four number
+2.Write a code to print day of the week.
+3.Write a code to print table of given number.(Take input from user)
+4.Write a menu driven calculator, Addition,Substraction,Muliplication,Divison,Floor divison,Modulas(Try float values for all operation)
+5.Write a menu driven code to print table of given number for given range.
+
+Basics(Optional):
+1.Write a program to find even number
+2.Write a program to find odd number
+3.Write a program to check given string ends with "t" or not
+4.Write a program to check given string containes "iis" at the end or not.
+5.Write a program to print even number from 1 to 20
+6.Write a program to print odd number from 1 to 20
+
+
+num="1,2,3,4,5,6,7,8,9"
+Use above string in below questions:
+1.Perform addition of all numbers in the string
+2.Perform addition of all even number from string
+
+Basics(optional):
+1.Write a code to print the Table of given number(Input from user) using for loop.
+2.Write a code to print even number using for loop in given range(Take range from user)
+3.Write a code to print odd number using for loop in given range(Take input from user)
+4.Write a code to print fibonnaci series( 1,1,2,3,5,8,13,21...) till 100.
+5.Write a code to check the given string is palindrome or not. (abba)
+6.Write a code to check wether a given number is divisible by the given number(Take both number from user)
+
+
+1.Start a mini project Console ERP system. Initialize git in this project.
+	-Add Employee
+	-Delete Employee
+	-Search Employee
+	-Change Employee Data
+	-Display 
+Notes for Q1:
+Output of display should be like
+1.Sid
+2.Bhargav
+3.Raja
+Check if user have entered or not(Check for None)
+
+Optional(Advanced)
+1.Create a small fruit shop software
+-Add fruit
+-Delete fruit by name
+-Search fruit by name and rate
+-Change fruit name and rate
+-Display
+Here store Fruit name and rate together in nested list
+[[Apple,10],[mango,20]]
+
+1.Write a code to store fruit details in dictionary(fruit_name,rate,imported_from,import_date,buy_price)
+Take input from user
+
+2.Write a code to store employee information in dictionary(Only one employee details)
+Take input from user
+Properties: Name,Age,Gender,Place,Salary,Previous_company
+
+3.Store all the state names in tuple.And iterate through it and print on terminal
+
+4.Write a code to create a dictonary from given number range
+-If the input is 4 then the keys in dictionary are 1,2,3,4
+-And value is square of the key
+{1:1, 2:4, 3:9 ,4:16, 5:25}
+
+5.Write a code to iterate through the given string and store the alphabet and count(occurance) in dictionary
+-{A:2,a:1, s:10, d:20 ,f:30}
+"A computer is a machine that can be programmed to carry out sequences of
+ arithmetic or logical operations automatically. Modern computers can perform
+ generic sets of operations known as programs. These programs enable computers
+ to perform a wide range of tasks. A computer system is a complete computer
+ that includes the hardware operating system main software  and peripheral
+ equipment needed and used for full operation. This term may also refer 
+to a group of computers that are linked and function together"
+
+2.Fruit shop project:
+Implement using dictionary
+	-Add fruit
+	-Delete fruit by name
+	-Search fruit by name and rate
+	-Change fruit name and rate
+	-Add to cart(List the fruits with fruit_id->select id->store in cart list)
+	-Display
+	-Display the cart
+Properties: fruit_id,fruit_name,rate,imported_from,import_date,buy_price
+
+
+4.Implement above both questions using functions.
+
+Projects Assignment:
+1.Console ERP project
+Implement using dictionary:
+On First setup Add organization detail(New)
+	-Edit organization(New)
+	-Add Employee
+	-Delete Employee
+	-Search Employee by name
+	-Change Employee Data
+		=>Change name
+		=>change age
+		=>Change gender
+		=>change salary
+	-Manage All Teams(New)
+		-Create new Team(New)
+		-Display team(New)
+		-Manage Team(Particular Team)(New)
+			-Rename Team(optional)(New)
+			-Display Members(New)
+			-Add Members(New)
+			-Delete Members(New)
+		-Delete Team(New)
+	-Display 
+
+Properties:Empid, Name,age,gender,place,salary,previous_company,joining_date
+Date format "21/04/2021" dd/mm/yyyy
+
+2.Fruit shop project:
+Implement using dictionary
+	-Add fruit
+	-Delete fruit by name
+	-Search fruit by name and rate
+	-Change fruit name and rate
+	-Add to cart(Remove this option)
+	-Display and Buy(New)(List the fruits with fruit_id->select id->store in cart list)
+		-Add fruits to cart(New)
+		-Delete fruit from cart(New)
+		-Bill(New)
+	-Display the cart
+	-Bill(New)
+Properties: fruit_id,fruit_name,rate,imported_from,import_date,buy_price
+
+
+
+Questions:
+1.Write a python code to take string input from user and remove duplicate words.
+
+
+1. Write a program to generate list of numbers from 10 to 50, Use map to find square of all numbers from list
+2. Write a program to generate list of numbers from 10 to 50, Use filter to find all even numbers from list
+3. Write a code to get first three chars of all strings from list
+["Siddhant","Pavan","Ramya","Raja"]
+
+string = "A computer is a machine that can be programmed to carry out sequences of
+ arithmetic or logical operations automatically. Modern computers can perform
+ generic sets of operations known as programs. These programs enable computers
+ to perform a wide range of tasks. A computer system is a complete computer
+ that includes the hardware operating system main software  and peripheral
+ equipment needed and used for full operation. This term may also refer 
+to a group of computers that are linked and function together"
+
+Notes: alternate index means 0,2,4,6,8....
+
+4.Write a program to convert each alternate index word to upper case in above string. 
+5.Write a program to  remove alternate index word from above string.
+6.Write a program to find all the words from above string where first letter of word is 'c' and last letter is 'r'
+7.Write a program to reverse all the words of above string
+8.Write a program to find all the first letter of words from above string (No repetition of letters)
+
+10.Write the above string into file data1.txt
+11.Write the above string alternate index words into the file data2.txt
+12.Write the code to find all the words in data1.txt but not in data2.txt
+13.Write the above string into 10 files data3.txt,data4.txt and so on.. 
+
+1.Define a class named Circle which can be constructed by a radius.
+ The Circle class has a method which can compute the area.
+-Implement + operation (Perform addition of radius)
+-Implement documentation attribute(__doc__ attribute)
+-Implement string typecasting and print "The radius is ..value.."(__str__)
+
+
+2.Define a class named Rectangle which can be constructed by a length 
+and width. The Rectangle class has a method which can compute the area.
+-Implement + operation (Perform addition of length and width)
+-Implement documentation attribute(__doc__ attribute)
+-Implement string typecasting and print "The length is ..value.. and width is ..value.."(__str__)
+-Implement > operation(__gt__(self,other) and return true or false if area is greater or smaller)
+-Implement == operation(__eq__(self,other) and return true or false if area is equal or not)
+
+3.Define a class named Shape and its subclass Square. The Square class
+ has an init function which takes a length as argument. Both classes
+ have a area function which can print the area of the shape 
+where Shape's area is 0 by default.
+-Use math function to perform here calculation
+
+1.Write a program using os module to create all alphabetical letters file
+(E.g filename should be a.txt , b.txt and so on)(Use os module)
+
+2.Write a program to rename the file 1a.txt,2b.txt,3c.txt and so on(Use os module)
+
+3.Write a program to plot graph on "Year"(x axis) and "Data.AIDS-Related Deaths.All Ages"(y axis) from aids.csv
+
+4.Write a program to plot graph on "Location.Country"(x axis) and total of "Data.Cases" and "Data.Deaths"(y axis) from covid csv
+
+

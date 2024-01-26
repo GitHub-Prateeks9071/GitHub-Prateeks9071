@@ -1,0 +1,25 @@
+show databases
+
+use exam
+
+db.createCollection("Trip_Guide")
+
+db.createCollection("Trip")
+
+db.Trip_Guide.insertOne({TNO:1111, FROM_CITY:'Pune',TO_CITY:"Nashik",DEPARATURE_DATE:ISODate('2018-02-12'),RETURN_DATE:ISODate('2018-03-12'),GUIDE:{GNO:100,G_NAME:'Ramesh',START_YEAR:2000,DEPTNO:20} })
+
+db.Trip_Guide.insertOne({TNO:1112, FROM_CITY:'Surat',TO_CITY:"Pune",DEPARATURE_DATE:ISODate('2018-02-15'),RETURN_DATE:ISODate('2018-02-18'),GUIDE:{GNO:101,G_NAME:'Raju',START_YEAR:2000,DEPTNO:22} })
+
+db.Trip_Guide.insertOne({TNO:1113, FROM_CITY:'Indore',TO_CITY:"Nashik",DEPARATURE_DATE:ISODate('2018-02-22'),RETURN_DATE:ISODate('2018-02-25'),GUIDE:{GNO:102,G_NAME:'jeet',START_YEAR:2000,DEPTNO:21} })
+
+db.Trip_Guide.insertOne({TNO:1114, FROM_CITY:'Surat',TO_CITY:"Indore",DEPARATURE_DATE:ISODate('2018-03-15'),RETURN_DATE:ISODate('2018-03-18'),GUIDE:{GNO:101,G_NAME:'Raju',START_YEAR:2000,DEPTNO:22} })
+
+
+
+db.Trip_Guide.find({"GUIDE.G_NAME":"Raju"},{})
+
+db.Trip_Guide.find(	{FROM_CITY : {$eq :'/a/i'} } $or : TO_CITY : {$eq: /p/i}	)
+
+
+
+
